@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1090347003063",
+    "project_id": "geminai-realms-8c93a",
+    "storage_bucket": "geminai-realms-8c93a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090347003063:android:f6f2395236888dfd75b132",
+        "android_client_info": {
+          "package_name": "com.example.geminai_realms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkTM5pM1GvxWrOYC34FIWIjmEIyZv_vB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

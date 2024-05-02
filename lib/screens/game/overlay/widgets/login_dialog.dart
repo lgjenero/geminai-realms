@@ -54,7 +54,7 @@ class _LoginDialogState extends ConsumerState<LoginDialog> {
   bool _showPassword = false;
   bool _loading = false;
   String _error = '';
-  final bool _signIn = false;
+  bool _signIn = false;
 
   @override
   void initState() {
@@ -181,23 +181,23 @@ class _LoginDialogState extends ConsumerState<LoginDialog> {
   }
 
   void _toggleSignIn() {
-    showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-              backgroundColor: AppColors.gameForeground,
-              titleTextStyle: AppFonts.instance.gameMenuTitle(widget.size).copyWith(color: AppColors.gameBackground),
-              contentTextStyle: AppFonts.instance.gameMenuText(widget.size).copyWith(color: AppColors.gameBackground),
-              title: const Text('Sign up unavaialble'),
-              content: const Text('Sign up is not available yet'),
-              actions: [
-                TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('OK')),
-              ],
-            ));
+    // showDialog(
+    //     context: context,
+    //     builder: (context) => AlertDialog(
+    //           backgroundColor: AppColors.gameForeground,
+    //           titleTextStyle: AppFonts.instance.gameMenuTitle(widget.size).copyWith(color: AppColors.gameBackground),
+    //           contentTextStyle: AppFonts.instance.gameMenuText(widget.size).copyWith(color: AppColors.gameBackground),
+    //           title: const Text('Sign up unavaialble'),
+    //           content: const Text('Sign up is not available yet'),
+    //           actions: [
+    //             TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('OK')),
+    //           ],
+    //         ));
 
-    // setState(() {
-    //   _signIn = !_signIn;
-    //   _error = '';
-    // });
+    setState(() {
+      _signIn = !_signIn;
+      _error = '';
+    });
   }
 
   void _tryLogin() async {
